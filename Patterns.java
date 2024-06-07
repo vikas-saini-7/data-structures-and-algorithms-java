@@ -77,8 +77,8 @@ public class Patterns {
     //  *****
     static void pattern6(int n){
         for (int row = 1; row <= n; row++) {
-            for (int col = 1; col <= row; col++) {
-                if(col==row){
+            for (int col = 1; col <= n; col++) {
+                if((row+col) > n ){
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
